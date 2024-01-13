@@ -1,0 +1,34 @@
+{
+    "name": "BTCD_srb_local_adapter",
+    "isFavorite": false,
+    "items": [
+        {
+            "coin": "BTCD",
+            "pool_ssl": false,
+            "dpool_ssl": false,
+            "miner": "srbminer",
+            "miner_config": {
+                "url": "127.0.0.1:5555",
+                "algo": "BTCDhash",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--disable-cpu"
+            },
+            "pool_geo": []
+        },
+        {
+            "coin": "BTCD",
+            "pool_ssl": false,
+            "dpool_ssl": false,
+            "miner": "custom",
+            "miner_alt": "BTCD_bridge",
+            "miner_config": {
+                "url": "YOUR_KARLSEND_NODE_IP_HERE:42110",
+                "miner": "BTCD_bridge",
+                "template": "doesnt.matter",
+                "install_url": "https://github.com/BTCGhostdag/BTCD-stratum-bridge/releases/download/v1.1.0/BTCD_bridge-1.1.0_hive.tar.gz"
+            },
+            "pool_geo": []
+        }
+    ]
+}
